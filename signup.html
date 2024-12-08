@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+    <link href="css/bootstrap css/bootstrap.min.css" rel="stylesheet">
+    <link href="signup.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12  text-center">
+
+               <div class="card   m-5 p-5">
+   <h1 class="p-2 text-info">Smart Login System</h1>
+   <input class="form-control m-2 name text-white  " oninput="validationName()"    type="text" id="name" placeholder="Enter your name">
+   <p id="msgName" class="text-danger alert alert-danger d-none">Invaild username , it should contain at least one [a-z] ,one[0-9] </p>
+   <input class="form-control m-2 email text-white " oninput="validationEmail()"    type="email" id="email" placeholder="Enter your email">
+   <p id="not-valid" class="text-danger alert alert-danger d-none">Invaild email , it should be example@email.com</p>
+   <input class="form-control m-2 passward text-white " type="password" id="passward" placeholder="Enter your passward">
+   <p id="msgPassward" class="text-danger alert alert-danger d-none" >Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and one special character</p>
+   <button id="sign-up" class="btn btn-outline-info m-2 w-100"  type="button">Sign Up</button>
+   <p id="repeatedEmail" class="text-danger d-none">email already exists</p>
+   <p class="d-none text-success" id="success">Success</p>
+  
+  
+   <p class="text-white"> You have an account?<a id="sign-in"  class="text-white text-decoration-none"  href="index.html"> Signin</a></p>
+
+               </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>
